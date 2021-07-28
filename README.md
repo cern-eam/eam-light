@@ -2,9 +2,13 @@
 EAM Light is a responsive web application providing the core functionality of Infor EAM. It is functional on all platforms, including smartphones and tablets, and allows users with no or limited training experience to perform common Infor EAM tasks:
 
 * Searching, viewing, creating, updating and deleting Work Orders, Equipment and Parts
-* The Work Order screen supports the blocks Details, Scheduling, User Defined Fields, Custom Fields and Equipment Custom fields as well as the tabs Comments, Activities, Checklists, Book Labour, Parts and Child Work Orders in the form of areas
-* The Equipment screens support the blocks Details, Part Association, Hierarchy, User Defined Fields, Custom Fields and Part Custom fields (not in EAM) as well as the tabs Comments, Events (split into Work Order History and Equipment History) and Associated Parts
-* The Part screen supports the blocks User Defined Fields and Custom Fields as well as the tabs Comments, Stock and Where Used
+* All screens composed of user selectable areas representing EAM blocks or tabs 
+* Work Order screen with
+   - Details, Scheduling, Closing Codes, Parts Child Work Orders, Comments, Activities, Book Labour, Checklist, Custom Fields, Equipment Custom fields, Meter Readings and Equipment 
+* Equipment screens with
+   -  Details, Part Association, Hierarchy, Events (split into Work Order History and Equipment History), Associated Parts, Comments, User Defined Fields, Custom Fields and Part Custom fields (not in EAM)
+* Part screen with
+   - User Defined Fields, Stock, Where Used, Assets (not in EAM), Comments and Custom Fields
 * Additional functionalities comprise a global search, WO inboxes for the user and the user's department, a mail-a-link feature, a Meter Reading screen, an Install Equipment screen
 
 [comment]: # (## Screenshots)
