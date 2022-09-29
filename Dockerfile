@@ -39,7 +39,7 @@ RUN git clone https://github.com/cern-eam/eam-light-backend.git && \
 FROM jboss/wildfly:22.0.1.Final
 # Add all supported JDBC drivers
 ADD docker/standalone.xml /opt/jboss/wildfly/standalone/configuration/
-ADD docker/cacerts /opt/
+ADD docker/cacerts /etc/alternatives/java_sdk/lib/security/
 ADD docker/*.jar /opt/jboss/wildfly/standalone/deployments/
 
 COPY --from=feBuilder /usr/src/app/eam-light-frontend/build/eamlight.war /opt/jboss/wildfly/standalone/deployments/
