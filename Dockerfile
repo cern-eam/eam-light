@@ -18,7 +18,7 @@ ENV REACT_APP_BACKEND "/rest"
 ENV PUBLIC_URL "/eamlight"
 ENV REACT_APP_LOGIN_METHOD "STD"
 ENV REACT_APP_CERN_MODE "FALSE"
-ENV REACT_APP_MONO_ORG "FALSE"
+ENV REACT_APP_MULTI_ORG "TRUE"
 ADD docker/jboss-web.xml public/WEB-INF
 RUN npm run build && \
     cd build; zip -r eamlight.zip *; mv eamlight.zip eamlight.war;

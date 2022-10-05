@@ -16,7 +16,7 @@ The docker container may be started by providing a single argument: the Infor We
 docker run -p 8080:8080 -p 9090:9090 --env EAMLIGHT_INFOR_WS_URL=<Infor WS URL> cerneam/eam-light
 ```
 
-In addition, a new Grid must be created (Administration / Screen Configuration / Grid Designer) exactly as illustrated below, with the exception of the Grid ID. 
+In addition, a new Grid must be created (Administration / Screen Configuration / Grid Designer) exactly as illustrated below with all available fields selected, with the exception of the Grid ID. 
 
 ![Alt text](EAMLight_Layout_Grid.png?raw=true "EAM Light Layout Grid")
 
@@ -29,7 +29,7 @@ The docker container exposes the following ports:
 | 8080          | EAM Light Backend     | 
 | 9090          | JBoss Management Port |
 
-The EAM Light REST backend is available at the endpoint [http://localhost:9090/rest](http://localhost:9090/rest).
+The EAM Light REST backend is available at the endpoint [http://localhost:8080/rest](http://localhost:8080/rest).
 
 You may also configure the [backend](https://github.com/cern-eam/eam-light-backend) or the [frontend](https://github.com/cern-eam/eam-light-frontend) further.
 
