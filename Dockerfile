@@ -14,7 +14,7 @@ ENV VITE_CERN_MODE="FALSE"
 RUN yarn build
 
 # Build Backend
-FROM maven:3.6.3-jdk-8 AS bebuilder
+FROM maven:3.8.6-openjdk-8 AS bebuilder
 RUN mkdir /home/app
 WORKDIR /home/app
 RUN git clone https://github.com/cern-eam/eam-light-backend.git && \
