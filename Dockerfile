@@ -1,5 +1,5 @@
 # Build Frontend
-FROM node:22.3 AS febuilder
+FROM node:22.13 AS febuilder
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
