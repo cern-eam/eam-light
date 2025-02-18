@@ -5,6 +5,7 @@ RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 RUN git clone https://github.com/cern-eam/eam-light-frontend.git
 WORKDIR ./eam-light-frontend
+RUN git checkout ric
 RUN yarn install
 ENV VITE_BACKEND="/apis/eamlightws/rest"
 ENV VITE_PUBLIC_URL=""
@@ -19,6 +20,7 @@ RUN mkdir /home/app
 WORKDIR /home/app
 RUN git clone https://github.com/cern-eam/eam-light-backend.git && \
 	cd eam-light-backend && \
+    git checkout ric && \
 	mvn clean package -PNONE,OPEN
 
 # Image
