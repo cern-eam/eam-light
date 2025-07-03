@@ -1,6 +1,6 @@
 # EAM Light
 
-EAM Light is a responsive web application providing an alternative interface to some of the the core functionalities of HxGN EAM, previously Infor EAM. It is functional on all platforms, including smartphones and tablets, and allows users with no or limited training experience to perform common Infor EAM tasks:
+EAM Light is a responsive web application providing an alternative interface to some of the the core functionalities of HxGN EAM, previously Infor EAM. It is functional on all platforms, including smartphones and tablets, and allows users with no or limited training experience to perform common HxGN EAM tasks, such as:
 
 - Viewing, creating, updating and deleting Work Orders, Equipment and Parts
 - Custom Fields and User Defined Fields in all of the above
@@ -13,7 +13,7 @@ EAM Light is a responsive web application providing an alternative interface to 
 
 To run EAM Light using Docker, we have available a Docker image that exposes both the backend and frontend modules of the application.
 
-The docker container may be started by providing a single argument: the Infor Web Server URL (EAMLIGHT_INFOR_WS_URL), which will look similar in your organization to the following: `https://inforappserver/axis/services/EWSConnector`.
+The docker container may be started by providing a single argument: the HxGN EAM Web Server URL (EAMLIGHT_INFOR_WS_URL), which will look similar in your organization to the following: `https://hxgneamappserver/axis/services/EWSConnector`.
 
 ```
 docker run -p 8080:80 -p 9990:9990 --env EAMLIGHT_INFOR_WS_URL=<Infor WS URL> cerneam/eam-light
@@ -53,10 +53,10 @@ You may also configure the [backend](https://github.com/cern-eam/eam-light-backe
 | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | [EAM Light Frontend](https://github.com/cern-eam/eam-light-frontend)  | Frontend module of the EAM Light application                                       |
 | [EAM Light Backend](https://github.com/cern-eam/eam-light-backend)    | Backend module of the EAM Light application                                        |
-| [EAM WSHub Core](https://github.com/cern-eam/eam-wshub-core)          | Core library to provide a clean Java interface to Infor EAM                        |
+| [EAM WSHub Core](https://github.com/cern-eam/eam-wshub-core)          | Core library to provide a clean Java interface to HxGN EAM                         |
 | [EAM Components](https://github.com/cern-eam/eam-components)          | Library with a set of reusable components for EAM frontend application development |
-| [EAM WSHub Proxy Client](https://github.com/cern-eam/eam-proxyclient) | Low-level JAX-WS Proxy Client to consume Infor EAM Web Services                    |
-| [EAM WSHub](https://github.com/cern-eam/eam-wshub)                    | Different application that exposes Infor EAM Web Services as SOAP/REST endpoints   |
+| [EAM WSHub Proxy Client](https://github.com/cern-eam/eam-proxyclient) | Low-level JAX-WS Proxy Client to consume HxGN  EAM Web Services                    |
+| [EAM WSHub](https://github.com/cern-eam/eam-wshub)                    | Different application that exposes HxGN  EAM Web Services as SOAP/REST endpoints   |
 
 [comment]: # "## Contributing"
 
