@@ -1,6 +1,6 @@
 # EAM Light
 
-EAM Light is a responsive web application providing the core functionality of Infor EAM. It is functional on all platforms, including smartphones and tablets, and allows users with no or limited training experience to perform common Infor EAM tasks:
+EAM Light is a responsive web application providing an alternative interface to some of the the core functionalities of HxGN EAM, previously Infor EAM. It is functional on all platforms, including smartphones and tablets, and allows users with no or limited training experience to perform common Infor EAM tasks:
 
 - Viewing, creating, updating and deleting Work Orders, Equipment and Parts
 - Custom Fields and User Defined Fields in all of the above
